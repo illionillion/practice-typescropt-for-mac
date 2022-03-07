@@ -17,11 +17,17 @@ for (let i = 1; i <= 9; i++) {
     }
     console.log(text);
 }
-// input:textのvalueが取得できない…
-// window.addEventListener('load',()=>{
-//     <HTMLInputElement>document.getElementById('tbox')?.addEventListener('change',(e)=>{
-//         // console.log(`Hello ${e}`)
-//         console.log(e)
-//     })
-// })
+window.addEventListener('load', () => {
+    var _a, _b;
+    (_a = document.getElementById('tbox')) === null || _a === void 0 ? void 0 : _a.addEventListener('change', (e) => {
+        // console.log(`Hello ${e}`)
+        let target = e.target;
+        console.log(target.value);
+    });
+    let count = 0;
+    (_b = document.getElementById('countbtn')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => {
+        count++;
+        console.log(count);
+    });
+});
 //# sourceMappingURL=index.js.map

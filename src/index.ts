@@ -22,10 +22,16 @@ for (let i = 1; i <= 9; i++) {
     
 }
 
-// input:textのvalueが取得できない…
-// window.addEventListener('load',()=>{
-//     <HTMLInputElement>document.getElementById('tbox')?.addEventListener('change',(e)=>{
-//         // console.log(`Hello ${e}`)
-//         console.log(e)
-//     })
-// })
+window.addEventListener('load',()=>{
+    document.getElementById('tbox')?.addEventListener('change',(e)=>{
+        // console.log(`Hello ${e}`)
+        let target = e.target as HTMLInputElement;
+        console.log(target.value)
+    })
+    let count:number=0;
+    document.getElementById('countbtn')?.addEventListener('click',(e)=>{
+        count++;
+        console.log(count);
+        
+    })
+})
