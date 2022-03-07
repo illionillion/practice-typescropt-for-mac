@@ -21,3 +21,11 @@ for (let i = 1; i <= 9; i++) {
     console.log(text)
     
 }
+
+// input:textのvalueが取得できない…
+// window.addEventListener('load',()=>{
+//     <HTMLInputElement>document.getElementById('tbox')?.addEventListener('change',(e)=>{
+//         // console.log(`Hello ${e}`)
+//         console.log(e)
+//     })
+// })
