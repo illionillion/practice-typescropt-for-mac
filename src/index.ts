@@ -32,6 +32,9 @@ window.addEventListener('load',()=>{
     document.getElementById('countbtn')?.addEventListener('click',(e)=>{
         count++;
         console.log(count);
+
+        let ele = document.getElementById('view') as HTMLElement
+        ele.innerHTML=`${count}`
         
     })
 })

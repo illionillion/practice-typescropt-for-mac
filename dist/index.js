@@ -28,6 +28,8 @@ window.addEventListener('load', () => {
     (_b = document.getElementById('countbtn')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => {
         count++;
         console.log(count);
+        let ele = document.getElementById('view');
+        ele.innerHTML = `${count}`;
     });
 });
 //# sourceMappingURL=index.js.map
